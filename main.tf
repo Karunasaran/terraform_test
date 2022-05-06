@@ -6,6 +6,7 @@ resource "aws_instance" "ec2instance" {
   availability_zone           = var.az
   tags                        = var.tag
   vpc_security_group_ids      = var.securitygroups
+  key_name                    = "Jenkins"
 
 }
 
